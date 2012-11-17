@@ -5,6 +5,9 @@ author  'Tray Torrance'
 version '0.1.0'
 license 'Apache License 2.0'
 
+project_page 'https://github.com/torrancew/puppet-cron'
+source       'https://github.com/torrancew/puppet-cron'
+
 summary     'A puppet module for managing cron jobs via cron.d'
 description 'This module provides defined types for the following:
   cron::hourly  - A configurable hourly cron.d job file
@@ -13,20 +16,19 @@ description 'This module provides defined types for the following:
   cron::monthly - A configurable monthly cron.d job fil
   cron::job     - A configurable generic cron.d job file
   
-  All jobs allow configuration of the following parameters:
-    environment - An array or newline-separated string of environment variables
-    user        - The user the job should be executed as
-    command     - The command to execute
+All jobs allow configuration of the following parameters:
+  environment - An array or newline-separated string of environment variables
+  user        - The user the job should be executed as
+  command     - The command to execute
 
-  Additionally, each type of job allows configuration of the corresponding
-  relevant cron time fields:
-    cron::hourly  - minute
-    cron::daily   - minute, hour
-    cron::weekly  - minute, hour, weekday
-    cron::monthly - minute, hour, date
-    cron::job     - minute, hour, date, month, weekday
+Additionally, each type of job allows configuration of the corresponding
+relevant cron time fields:
+  cron::hourly  - minute
+  cron::daily   - minute, hour
+  cron::weekly  - minute, hour, weekday
+  cron::monthly - minute, hour, date
+  cron::job     - minute, hour, date, month, weekday
+
+For more information, see the PuppetDoc documentation in the manifests.
 '  
-
-project_page 'https://github.com/torrancew/puppet-cron'
-source       'https://github.com/torrancew/puppet-cron'
 
